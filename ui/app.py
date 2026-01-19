@@ -13,15 +13,14 @@ import pandas as pd
 # ⚙️ Load Models
 # ===========================
 # Update paths according to your Kaggle input directory
-MODEL_PATH = "/kaggle/input/your-models"
 
-hybrid_model = joblib.load("/kaggle/input/colorectal-histology-model/scikitlearn/default/1/kaggle/working/heirarchial_model.pkl")
+hybrid_model = joblib.load("./models/heirarchial_model.pkl")
 
-tumour_model = joblib.load("/kaggle/input/colorectal-histology-model/scikitlearn/default/1/kaggle/working/tumour_model.pkl")
+tumour_model = joblib.load("./models/tumour_model.pkl")
 
-structural_model = joblib.load("/kaggle/input/colorectal-histology-model/scikitlearn/default/1/kaggle/working/structural_model.pkl")
+structural_model = joblib.load("./models/structural_model.pkl")
 
-normal_model = joblib.load("/kaggle/input/colorectal-histology-model/scikitlearn/default/1/kaggle/working/normal_model.pkl")
+normal_model = joblib.load("./models/normal_model.pkl")
 
 # ===========================
 # 🧠 Dictionaries
